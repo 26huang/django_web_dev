@@ -19,4 +19,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('apps.main.urls')),
+    path('tinymce', include('tinymce.urls')), # 3rd party app installed using pip
 ]

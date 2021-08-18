@@ -3,3 +3,7 @@
 # python manage.py shell
 # python manage.py startserver
 # python manage.py createsuperuser
+
+
+
+# pip install django-tinymce4-lite
