@@ -8,7 +8,12 @@ from random import randint
 
 
 def show_subject():
-    return models.Subject.objects.all()
+    subjects = models.Subject.objects.all()
+    for subject in subjects:
+        print('Title: {}'.format(subject.title))
+        print('Content: {}'.format(subject.content))
+        print('Published: {}'.format(subject.published))
+    return subjects
 
 
 def add_subject(title='', content='', published=timezone.now()):
