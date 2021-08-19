@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link href="{% static 'tinymce/css/prism.css' %}">
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+{% for sub in subject %}
+    <p> Title: {{ sub.title }} </p>
+    <p> Published: {{ sub.published }} </p>
+    <p> Content: {{ sub.title }} </p>
+    <br><br>
+{% endfor %}
+</body>
+</html>
